@@ -1,0 +1,130 @@
+@z-index: 99999999;
+
+.not-selectable() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#bookmarklet-measurelet {
+    @import "css/reset.less";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.2em;
+    top: 0;
+    left: 0;
+    z-index: @z-index;
+    position: fixed;
+
+    &.active {
+        height: 100%;
+        width: 100%;
+    }
+
+    ul, li, a, p, div {
+        text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 12px;
+        width: auto;
+        height: auto;
+        line-height: 1.2em;
+    }
+
+    a {
+        color: #000;
+
+        &:hover {
+            color: #666;
+        }
+    }
+
+    #bookmarklet-controls {
+        position: relative;
+        z-index: @z-index + 100;
+        .not-selectable();
+
+        li {
+            display: block;
+            float: left;
+
+            &.active a {
+                color: #fff;
+                background: rgba(100,100,100, .7);
+            }
+        }
+
+        a {
+            display: block;
+            padding: 5px;
+            line-height: 1em;
+            color: #fff;
+            background: rgba(0,0,0, .7);
+
+            &:hover {
+                color: #aaa;
+            }
+        }
+    }
+
+    #bookmarklet-contents {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: @z-index;
+    }
+
+    #bookmarklet-output {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px 20px;
+        background: rgba(0,0,0, .7);
+        color: #fff;
+
+        div {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .bookmarklet-marker {
+        display: none;
+        position: absolute;
+        z-index: @z-index + 500;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        background: rgba(0,0,0, .7);
+        .not-selectable();
+
+        div {
+            background: #fff;
+            height: 3px;
+            width: 3px;
+        }
+    }
+
+    #bookmarklet-marker-source {
+        background: rgba(75,75,75, .7);
+    }
+
+    #bookmarklet-marker-target {
+        background: rgba(0,0,0, .7);
+    }
+}
