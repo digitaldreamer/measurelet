@@ -13,11 +13,9 @@ Usage
 * click show to reset the markers back to (0, 0)
 * the source marker defaults to (0, 0)
 
-Drag this link into your browser: `Measurelet <javascript:(function(){if(window.Measurelet!==undefined){window.Measurelet.init();}else{document.body.appendChild(document.createElement('script')).src='http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.js';}})();>`_
+.. <a href="javascript:(function(){if(window.Measurelet!==undefined){window.Measurelet.init();}else{document.body.appendChild(document.createElement('script')).src='http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.js';}})();">Measurelet</a>
 
-<a href="javascript:(function(){if(window.Measurelet!==undefined){window.Measurelet.init();}else{document.body.appendChild(document.createElement('script')).src='http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.js';}})();">Measurelet</a>
-
-::
+Create a bookmarklet out of the code bellow::
 
     javascript:(function(){if(window.Measurelet!==undefined){window.Measurelet.init();}else{document.body.appendChild(document.createElement('script')).src='http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.js';}})();
 
