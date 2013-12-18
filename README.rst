@@ -19,3 +19,21 @@ Create a bookmarklet out of the code bellow::
 
     javascript:(function(){if(window.Measurelet!==undefined){window.Measurelet.init();}else{document.body.appendChild(document.createElement('script')).src='http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.js';}})();
 
+
+Build From Source
+#################
+
+Requirements
+
+* java
+* node
+* make
+* less
+
+::
+
+    # build
+    make
+
+    # clean
+    make clean

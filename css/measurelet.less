@@ -46,7 +46,7 @@
         }
     }
 
-    #bookmarklet-controls {
+    #bookmarklet-measurelet-controls {
         position: relative;
         z-index: @z-index + 100;
         .not-selectable();
@@ -74,7 +74,7 @@
         }
     }
 
-    #bookmarklet-contents {
+    #bookmarklet-measurelet-container {
         display: none;
         position: absolute;
         top: 0;
@@ -84,7 +84,12 @@
         z-index: @z-index;
     }
 
-    #bookmarklet-output {
+    #bookmarklet-measurelet-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    #bookmarklet-measurelet-output {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -101,7 +106,7 @@
         }
     }
 
-    .bookmarklet-marker {
+    .bookmarklet-measurelet-marker {
         display: none;
         position: absolute;
         z-index: @z-index + 500;
@@ -120,11 +125,11 @@
         }
     }
 
-    #bookmarklet-marker-source {
+    #bookmarklet-measurelet-marker-source {
         background: rgba(75,75,75, .7);
     }
 
-    #bookmarklet-marker-target {
+    #bookmarklet-measurelet-marker-target {
         background: rgba(0,0,0, .7);
     }
 }
