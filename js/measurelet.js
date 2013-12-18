@@ -26,7 +26,6 @@ require(['jquery', 'underscore', 'backbone', 'views/bookmarklet'], function($, _
         window.Measurelet = window.Measurelet || new Measurelet();
         window.Measurelet.init();
 
-        // TODO: perhaps refactor into Backbone
         function Measurelet() {
             var ID = 'bookmarklet-measurelet';
             var STYLESHEET = 'http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.css';
