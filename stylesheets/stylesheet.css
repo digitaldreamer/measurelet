@@ -366,6 +366,15 @@ Full-Width Styles
   background: #212121;
 }
 
+.button {
+  display: block;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: #0090ff;
+  font-weight: 700;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
 
 
 /*******************************************************************************
