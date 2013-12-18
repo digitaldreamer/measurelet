@@ -30,20 +30,11 @@ require(['jquery', 'underscore', 'backbone', 'views/bookmarklet'], function($, _
             var ID = 'bookmarklet-measurelet';
             var STYLESHEET = 'http://pypi.tspxyz.com/bookmarklets/measurelet/measurelet.min.css';
 
-            var sourcePosition = {x: 0, y:0},
-                targetPosition = {x: 0, y:0};
-
-            var $dragging,
-
-                $markerTarget,
-                $markerSource;
-
             this.init = function() {
                 window.Measurelet.views = {};
                 window.Measurelet.models = {};
 
                 $('head').append('<link rel="stylesheet" type="text/css" href="' + STYLESHEET + '">');
-                $dragging = $('body');
 
                 var div = $('<div/>').attr('id', ID);
                 $('body').prepend(div);
